@@ -32,8 +32,6 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("psw").value;
   const repeatPassword = document.getElementById("psw-repeat").value;
-
-  // 3️⃣ ✅ PLACE REGEX CHECK RIGHT HERE
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
   if (!emailRegex.test(email)) {
