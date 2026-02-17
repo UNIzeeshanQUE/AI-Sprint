@@ -358,3 +358,56 @@ button:hover {
     flex-direction: column;
   }
 }
+/* ============================= */
+/* HOME PAGE LAYOUT */
+/* ============================= */
+
+.home-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #4b5563;
+}
+
+.home-text button {
+  margin-top: 10px;
+}
+
+.home-image {
+  flex: 1;
+  text-align: right;
+}
+
+.home-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image {
+    text-align: center;
+  }
+}
